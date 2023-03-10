@@ -10,10 +10,6 @@ inputs:
   target_repo_url:
     description: "Target url"
     required: true
-  ssh_username:
-    description: "Username for ssh connection"
-    required: false
-    default: "git"
 runs:
   using: 'docker'
   image: 'Dockerfile'
