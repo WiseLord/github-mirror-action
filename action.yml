@@ -1,0 +1,15 @@
+name: "Mirroring to GitLab"
+description: "Mirror a repository to GitLab"
+branding:
+  icon: "archive"
+  color: "blue"
+inputs:
+  ssh_private_key:
+    description: "SSH private key for ssh connection to the target repository"
+    required: false
+  target_repo_url:
+    description: "Target url"
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
